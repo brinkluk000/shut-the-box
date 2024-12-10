@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SHUT THE BOX</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./style.css">
+        <script src = './game.js' defer></script>
+    </head>
+
+    <body>
+        <div class = 'players'>
+            <h1 class = 'title'>SHUT THE BOX</h1>
+            <input type = 'string' placeholder = 'Your name' id = 'playerNameInput'>
+            <input type = 'string' placeholder = "Opponent's name" id = 'opponentNameInput'>
+            <button class = 'startBtn'>Start Game</btn>
+        </div>
+        <div class = 'board'>
+            <h3 class = 'currentRound'>This is your current round</h3>
+            <h3 class = 'currentTurn'>This is your current turn</h3>
+            <div class = "boxes-div">
+                <div id = 'box1' class = "box"><p>1</p></div>
+                <div id = 'box2' class = "box"><p>2</p></div>
+                <div id = 'box3' class = "box"><p>3</p></div>
+                <div id = 'box4' class = "box"><p>4</p></div>
+                <div id = 'box5' class = "box"><p>5</p></div>
+                <div id = 'box6' class = "box"><p>6</p></div>
+                <div id = 'box7' class = "box"><p>7</p></div>
+                <div id = 'box8' class = "box"><p>8</p></div>
+                <div id = 'box9' class = "box"><p>9</p></div>
+            </div>
+        </div>
+        <div class = 'dice'>
+            <div class = "imageDice">
+                <div class = 'diceImg1'></div>
+                <div class = 'diceImg2'></div>
+            </div>
+            <p class = 'sumOfDice'></p>
+            <button class = 'rollBtn'>Roll Dice</button>
+            <button class = 'individualBtn'>Individual Dice</button>
+            <button class = 'sumBtn'>Sum of the Dice</button>
+            <button class = 'endBtn'>End of Your Turn</button>
+        </div>
+        <div class = 'scorecard'>
+            <h3 id = "tableName">Table:</h3>
+            <table class = "table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th id = 'p1name'>Player1</th>
+                        <th id = 'p2name'>Player2</th>
+                    </tr>
+                </thead>
+                <tbody id = "tbody">
+                    <!-- This will be our scorecard -->
+                </tbody>
+            </table>
+        </div>
+        <div class = 'winner'>
+            <p class = "winnerText">Who won?</p>
+            <button class = "playAgainBtn">Play Again?</button>
+        </div>
+    </body>
+</html>

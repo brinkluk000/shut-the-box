@@ -1,0 +1,133 @@
+/* basic css reset */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+*{ margin: 0; }
+img{
+    display:block;
+    max-width: 100%;
+}
+/* basic css reset */
+
+.players{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.dice, .scorecard, .board, .winner{
+    display: none;
+}
+
+.shut{
+    background-color: black;
+    border: solid;
+    border-color: red;
+    color: red;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #d3fbd8;
+}
+
+.box{
+    border-color: black;
+    border: solid;
+    text-align: center;
+    gap: 5rem;
+}
+
+.boxes-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board{
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+.currentRound, .currentTurn{
+    font-size: 3rem;
+}
+
+#box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9{
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    min-width: 100px;
+    gap: 5rem;
+    margin: 20px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 15px;
+    line-height: 150px;
+    border: solid;
+}
+
+table{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+tbody{
+    border: solid;
+    border-color: black;
+}
+
+.imageDice{
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+button{
+    background-color: #f1f2e6;
+    border-radius: 8px;
+    min-width: 6rem;
+    min-height: 2rem;
+    margin: 1.2rem;
+}
+
+.sumOfDice{
+    font-size: 1.3rem;
+    margin: 5px;
+}
+
+#tableName{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.scorecard{
+    margin: 20px;
+}
+
+.dice{
+    margin: 20px;
+}
+
+.title{
+    margin: 10px;
+}
+
+tr, th, td{
+    font-size: 1.3rem;
+}
+
+td, th{
+    margin: 2rem;
+}
+
+.winnerText{
+    font-size: 1.3rem;
+    margin: 1.5rem;
+}
